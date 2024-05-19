@@ -10,21 +10,26 @@ import SwiftUI
 struct ProductDetailView: View {
     @ObservedObject var viewModel: ProductDetailViewModel
     @State var quantity: Int = 0
+    @State private var isLoading = false
     
     var body: some View {
         VStack {
-            if let product = viewModel.product {
-                Image(product.imageName)
+            if isLoading {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .padding()
+            } else {
+                Image(viewModel.product!.imageName)
                     .resizable()
                     .frame(maxWidth: .infinity, maxHeight: 280)
                     .cornerRadius(20)
                 
-                Text(product.title)
+                Text(viewModel.product!.title)
                     .font(.title2.bold())
                     .frame(maxWidth: .infinity)
                     .foregroundColor(.mainGray)
                 
-                Text("\(product.price) ₸/шт")
+                Text("\(viewModel.product!.price) ₸/шт")
                     .font(.headline.bold())
                     .frame(maxWidth: .infinity)
                     .foregroundColor(.lightGray)
@@ -74,10 +79,10 @@ struct ProductDetailView: View {
                             .cornerRadius(10)
                         } else {
                             Button(action: {
-                                quantity = product.minAddPosition
+                                quantity = viewModel.product!.minAddPosition
                             }) {
                                 HStack {
-                                    Text("\(product.price) ₸")
+                                    Text("\(viewModel.product!.price) ₸")
                                         .font(.subheadline)
                                         .fontWeight(.bold)
                                         .padding(.leading, 12)
@@ -96,8 +101,12 @@ struct ProductDetailView: View {
                     .padding()
                 }
                 Spacer()
-            } else {
-                Text("Загрузка данных...")
+            }
+        }
+        .onAppear {
+            isLoading = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                isLoading = false
             }
         }
     }
