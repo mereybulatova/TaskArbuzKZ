@@ -21,14 +21,14 @@ struct ProductCell: View {
                     Image("placeholder")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: screen.width * 0.45, height: screen.width * 0.35)
+                        .frame(width: screen.width * 0.45, height: screen.width * 0.3)
                         .cornerRadius(12)
                         .clipped()
                 } else {
                     Image(product.imageName)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: screen.width * 0.45, height: screen.width * 0.35)
+                        .frame(width: screen.width * 0.45, height: screen.width * 0.3)
                         .cornerRadius(12)
                         .clipped()
                 }
