@@ -2,8 +2,8 @@
 **Creating an application consisting of two screens. Simulating a small functional operation Arbuz.kz**
 ## Table of Contents
 - [Features](Features)
-- Usage
-- Screenshots
+- [Usage](Usage)
+- [Screenshots](Screenshots)
 ## Features
 - A TabBar consisting of two screens:
   - home
@@ -19,3 +19,6 @@
 4. All the products you have selected are displayed in the shopping cart, and the total cost is calculated immediately
 5. If the amount of the cart is less than 8000 tenge, it will calculate the missing amount for you before free delivery
 ## Screenshots
+![MainView]([URL_изображения](https://github.com/mereybulatova/TaskArbuzKZ/issues/1#issue-2304800624))
+![ProductDetailView](https://github.com/mereybulatova/TaskArbuzKZ/issues/2)
+![CartView](https://github.com/mereybulatova/TaskArbuzKZ/issues/3)
