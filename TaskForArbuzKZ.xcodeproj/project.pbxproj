@@ -20,6 +20,7 @@
 		C447C5B62BFA5B1200F0EB33 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447C5B52BFA5B1200F0EB33 /* CartViewModel.swift */; };
 		C447C5B82BFA5D2A00F0EB33 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447C5B72BFA5D2A00F0EB33 /* ProductCell.swift */; };
 		C447C5BA2BFA5D4800F0EB33 /* PositionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447C5B92BFA5D4800F0EB33 /* PositionCell.swift */; };
+		C447C5BD2BFA87A600F0EB33 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447C5BC2BFA87A600F0EB33 /* PaymentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		C447C5B52BFA5B1200F0EB33 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		C447C5B72BFA5D2A00F0EB33 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		C447C5B92BFA5D4800F0EB33 /* PositionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionCell.swift; sourceTree = "<group>"; };
+		C447C5BC2BFA87A600F0EB33 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				C447C5A72BFA56B500F0EB33 /* TabBarView.swift */,
 				C447C5952BFA4F5300F0EB33 /* MainView.swift */,
 				C447C5A92BFA578500F0EB33 /* CartView.swift */,
+				C447C5BC2BFA87A600F0EB33 /* PaymentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C447C5AA2BFA578500F0EB33 /* CartView.swift in Sources */,
+				C447C5BD2BFA87A600F0EB33 /* PaymentView.swift in Sources */,
 				C447C5962BFA4F5300F0EB33 /* MainView.swift in Sources */,
 				C447C5A82BFA56B500F0EB33 /* TabBarView.swift in Sources */,
 				C447C5942BFA4F5300F0EB33 /* TaskForArbuzKZApp.swift in Sources */,

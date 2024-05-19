@@ -21,7 +21,7 @@ struct TabBarView: View {
                 }
             }
             
-            CartView()
+            CartView(viewModel: CartViewModel.shared)
                 .tabItem {
                     VStack {
                         Text("Корзина")
