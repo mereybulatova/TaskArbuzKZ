@@ -11,7 +11,7 @@ import SwiftUI
 struct TaskForArbuzKZApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationControllerWrapper(rootView: TabBarView())
         }
     }
 }
