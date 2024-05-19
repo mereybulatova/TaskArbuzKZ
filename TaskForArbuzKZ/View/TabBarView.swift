@@ -10,22 +10,19 @@ import SwiftUI
 struct TabBarView: View {
     var body: some View {
         TabView {
-            NavigationStack {
-                MainView()
-            }
-            
-            .tabItem {
-                VStack {
-                    Text("Главная")
-                    Image(systemName: "house")
+            MainView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "house")
+                        Text("Главная")
+                    }
                 }
-            }
             
             CartView(viewModel: CartViewModel.shared)
                 .tabItem {
                     VStack {
-                        Text("Корзина")
                         Image(systemName: "cart")
+                        Text("Корзина")
                     }
                 }
         }

@@ -21,6 +21,8 @@
 		C447C5B82BFA5D2A00F0EB33 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447C5B72BFA5D2A00F0EB33 /* ProductCell.swift */; };
 		C447C5BA2BFA5D4800F0EB33 /* PositionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447C5B92BFA5D4800F0EB33 /* PositionCell.swift */; };
 		C447C5BD2BFA87A600F0EB33 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447C5BC2BFA87A600F0EB33 /* PaymentView.swift */; };
+		C447C5BF2BFA8C2C00F0EB33 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447C5BE2BFA8C2C00F0EB33 /* ProductDetailView.swift */; };
+		C447C5C12BFA8C5B00F0EB33 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447C5C02BFA8C5B00F0EB33 /* ProductDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		C447C5B72BFA5D2A00F0EB33 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		C447C5B92BFA5D4800F0EB33 /* PositionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionCell.swift; sourceTree = "<group>"; };
 		C447C5BC2BFA87A600F0EB33 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		C447C5BE2BFA8C2C00F0EB33 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		C447C5C02BFA8C5B00F0EB33 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +77,10 @@
 			children = (
 				C447C5932BFA4F5300F0EB33 /* TaskForArbuzKZApp.swift */,
 				C447C5BB2BFA5D4D00F0EB33 /* Components */,
-				C447C5AC2BFA587700F0EB33 /* Extensions */,
 				C447C5AE2BFA5A7B00F0EB33 /* Model */,
 				C447C5AB2BFA586500F0EB33 /* View */,
 				C447C5AD2BFA59DD00F0EB33 /* ViewModel */,
+				C447C5AC2BFA587700F0EB33 /* Extensions */,
 				C447C5972BFA4F5600F0EB33 /* Assets.xcassets */,
 				C447C5992BFA4F5600F0EB33 /* Preview Content */,
 			);
@@ -97,6 +101,7 @@
 				C447C5A72BFA56B500F0EB33 /* TabBarView.swift */,
 				C447C5952BFA4F5300F0EB33 /* MainView.swift */,
 				C447C5A92BFA578500F0EB33 /* CartView.swift */,
+				C447C5BE2BFA8C2C00F0EB33 /* ProductDetailView.swift */,
 				C447C5BC2BFA87A600F0EB33 /* PaymentView.swift */,
 			);
 			path = View;
@@ -115,6 +120,7 @@
 			children = (
 				C447C5AF2BFA5A9400F0EB33 /* MainViewModel.swift */,
 				C447C5B52BFA5B1200F0EB33 /* CartViewModel.swift */,
+				C447C5C02BFA8C5B00F0EB33 /* ProductDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 				C447C5AA2BFA578500F0EB33 /* CartView.swift in Sources */,
 				C447C5BD2BFA87A600F0EB33 /* PaymentView.swift in Sources */,
 				C447C5962BFA4F5300F0EB33 /* MainView.swift in Sources */,
+				C447C5C12BFA8C5B00F0EB33 /* ProductDetailViewModel.swift in Sources */,
 				C447C5A82BFA56B500F0EB33 /* TabBarView.swift in Sources */,
 				C447C5942BFA4F5300F0EB33 /* TaskForArbuzKZApp.swift in Sources */,
 				C447C5A22BFA522D00F0EB33 /* NavigationControllerWrapper.swift in Sources */,
@@ -217,6 +224,7 @@
 				C447C5B62BFA5B1200F0EB33 /* CartViewModel.swift in Sources */,
 				C447C5B82BFA5D2A00F0EB33 /* ProductCell.swift in Sources */,
 				C447C5B42BFA5AD900F0EB33 /* Position.swift in Sources */,
+				C447C5BF2BFA8C2C00F0EB33 /* ProductDetailView.swift in Sources */,
 				C447C5B22BFA5AB600F0EB33 /* Product.swift in Sources */,
 				C447C5BA2BFA5D4800F0EB33 /* PositionCell.swift in Sources */,
 			);
@@ -277,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -334,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -360,6 +368,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,6 +398,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

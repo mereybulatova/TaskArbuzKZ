@@ -66,31 +66,36 @@ struct ProductCell: View {
           
             HStack {
                 if quantity > 0 {
-                    HStack {
-                        Button(action: {
-                            if quantity > 0 {
-                                quantity -= 1
+                    Button {
+                        let position = Position(id: UUID().uuidString, product: product, count: self.quantity)
+                        CartViewModel.shared.addPosition(position)
+                    } label: {
+                        HStack {
+                            Button(action: {
+                                if quantity > 0 {
+                                    quantity -= 1
+                                }
+                            }) {
+                                Image(systemName: "minus")
+                                    .foregroundColor(.white)
                             }
-                        }) {
-                            Image(systemName: "minus")
+                            
+                            Text("\(quantity)")
+                                .fontWeight(.bold)
+                                .padding(.horizontal, 10)
+                                .font(.headline)
                                 .foregroundColor(.white)
-                        }
-                        
-                        Text("\(quantity)")
-                            .fontWeight(.bold)
-                            .padding(.horizontal, 10)
-                            .font(.headline)
-                            .foregroundColor(.white)
-                        
-                        Button(action: {
-                            quantity += 1
-                        }) {
-                            Image(systemName: "plus")
-                                .foregroundColor(.white)
-                        }
-                    }.frame(maxWidth: .infinity, minHeight: 35, maxHeight: 40)
-                        .background(Color.lightGreen)
-                        .cornerRadius(18)
+                            
+                            Button(action: {
+                                quantity += 1
+                            }) {
+                                Image(systemName: "plus")
+                                    .foregroundColor(.white)
+                            }
+                        }.frame(maxWidth: .infinity, minHeight: 35, maxHeight: 40)
+                            .background(Color.lightGreen)
+                            .cornerRadius(18)
+                    }
                 } else {
                     Button(action: {
                         quantity = product.minAddPosition

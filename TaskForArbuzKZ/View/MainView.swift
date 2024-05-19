@@ -25,6 +25,9 @@ struct MainView: View {
                     .onTapGesture {
                         isShowingDetail = true
                     }
+                    .sheet(isPresented: $isShowingDetail, content: {
+                        ProductDetailView(viewModel: ProductDetailViewModel(product: Product(id: "8", title: "Клубника Мурано от Arbuz Select 500 г", imageName: "klubnika", price: 1100, minAddPosition: 1)))
+                    })
             }
             
             Text("Популярное")
@@ -59,6 +62,9 @@ struct MainView: View {
                         }
                 }
             }).padding(.horizontal, 12)
+        }
+        .sheet(item: $selectedProduct) { product in
+            ProductDetailView(viewModel: ProductDetailViewModel(product: product))
         }
     }
 }

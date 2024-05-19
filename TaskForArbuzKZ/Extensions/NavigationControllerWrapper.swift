@@ -11,11 +11,15 @@ struct NavigationControllerWrapper<Content: View>: UIViewControllerRepresentable
     var rootView: Content
     
     func makeUIViewController(context: Context) -> UINavigationController {
-        let navigationController = UINavigationController()
-        navigationController.setViewControllers([UIHostingController(rootView: rootView)], animated: false)
+        let navigationController = UINavigationController(rootViewController: UIHostingController(rootView: rootView))
+        navigationController.isNavigationBarHidden = true
         return navigationController
     }
     
     func updateUIViewController(_ uiViewController: UINavigationController, context: Context) {
+        guard let hostingController = uiViewController.viewControllers.first as? UIHostingController<Content> else {
+            return
+        }
+        hostingController.rootView = rootView
     }
 }
